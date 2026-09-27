@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+  <title>Bun Barrage</title>
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Bun Barrage</h1>
+      <p class="sub">Bao vs Nori · a turn-based lobbing duel for Even G2</p>
+    </header>
+
+    <canvas id="preview" width="576" height="288" aria-label="Glasses preview"></canvas>
+
+    <section class="pad" aria-label="Phone controller">
+      <div class="aim">
+        <button data-key="up" aria-label="Raise angle">▲<small>ANGLE</small></button>
+        <button data-key="down" aria-label="Lower angle">▼<small>ANGLE</small></button>
+      </div>
+      <button data-key="fire" class="fire" aria-label="Hold to charge, release to fire">FIRE<small>hold · release</small></button>
+      <div class="side">
+        <button data-key="tap" class="tap">TAP<small>start / ok</small></button>
+        <button data-key="back" class="back">BACK</button>
+      </div>
+    </section>
+
+    <section class="status">
+      <div id="status">Starting…</div>
+    </section>
+
+    <section class="help">
+      <h2>Controls: R1 ring, temple touchpad, or the buttons above</h2>
+      <table>
+        <tr><th>Glasses / ring</th><th>Phone</th><th>Does</th></tr>
+        <tr><td>Swipe up / down</td><td>▲ / ▼ (hold to repeat)</td><td>Aim: change the angle</td></tr>
+        <tr><td>Long press</td><td>Hold FIRE</td><td>Charge power. It rises, then falls back if held too long</td></tr>
+        <tr><td>Release</td><td>Let go of FIRE</td><td>Fire!</td></tr>
+        <tr><td>Tap</td><td>TAP</td><td>Start / continue</td></tr>
+        <tr><td>Double tap</td><td>BACK</td><td>Back to title · on the title: exit</td></tr>
+      </table>
+      <p>The aiming line ignores wind: watch the flag. The little notch on the meter marks your last power. Three hearts each; a direct hit takes two.</p>
+    </section>
+
+    <details>
+      <summary>Log</summary>
+      <div id="log"></div>
+    </details>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

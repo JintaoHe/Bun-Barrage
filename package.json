@@ -1,0 +1,39 @@
+{
+  "name": "bun-barrage",
+  "version": "0.8.1",
+  "description": "Bun Barrage: a turn-based artillery duel for Even Realities G2 smart glasses",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 5173",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "preview": "tsx scripts/preview.ts",
+    "qr": "evenhub qr --http --port 5173",
+    "pack": "npm run build && evenhub pack app.json dist -o bun-barrage.ehpk",
+    "sim": "evenhub-simulator http://127.0.0.1:5173",
+    "sim:auto": "evenhub-simulator --automation-port 9898 \"http://127.0.0.1:5173/?hint\"",
+    "audit:public": "node scripts/audit-public.mjs"
+  },
+  "author": "JintaoHe",
+  "license": "MIT",
+  "dependencies": {
+    "@evenrealities/even_hub_sdk": "^0.0.16"
+  },
+  "devDependencies": {
+    "@evenrealities/evenhub-cli": "^0.1.14",
+    "@evenrealities/evenhub-simulator": "^0.9.5",
+    "@types/node": "^26.6.2",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.1",
+    "vitest": "^5.0.2"
+  },
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JintaoHe/Bun-Barrage.git"
+  }
+}

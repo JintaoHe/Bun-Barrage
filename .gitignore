@@ -1,0 +1,14 @@
+node_modules
+dist
+*.ehpk
+preview
+sim
+windows/setup-log.txt
+
+# never publish
+*.zip
+*.log
+.env
+.env.*
+.DS_Store
+Thumbs.db

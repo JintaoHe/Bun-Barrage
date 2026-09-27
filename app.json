@@ -1,0 +1,16 @@
+{
+  "package_id": "com.jintaohe.bunbarrage",
+  "edition": "202601",
+  "name": "Bun Barrage",
+  "version": "0.8.1",
+  "min_app_version": "2.2.10",
+  "min_sdk_version": "0.0.16",
+  "tagline": "Moonlit artillery duel: steamed bun vs. rice ball",
+  "description": "Bao the steamed bun and Nori the rice ball are facing off across the moonlit hills, and only one snack can win. Swing your crosshair to set the angle, press and hold to charge your shot, and let go to fire. The wind changes every turn, so read it before you launch. Land a direct hit for a big BONK! and two hearts of damage, or splash nearby for one. Knock out all three of your rival's hearts to win. Keep an eye on their faces: they squint while charging, see stars when bonked, sweat after a near miss, and cheer when they land a hit. Play however you like: swipe and press on the R1 ring, use the touchpad on your glasses' temple, or tap the big on-screen buttons on your phone. Controls: swipe up/down = aim, press and hold = charge, release = fire, tap = start, double tap = back / exit. On the phone: ▲▼ to aim, hold FIRE and release to shoot, TAP to start, BACK to go back.",
+  "author": "JintaoHe",
+  "entrypoint": "index.html",
+  "supported_languages": [
+    "en"
+  ],
+  "permissions": []
+}

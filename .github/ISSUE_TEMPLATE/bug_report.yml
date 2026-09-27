@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible problem.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Do not include credentials or personal data. Report security vulnerabilities privately using the Security tab.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Glasses or simulator (version), Even app version, phone OS, input used (ring, temple touchpad, phone buttons).
+    validations:
+      required: true
